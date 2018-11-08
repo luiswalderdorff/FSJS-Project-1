@@ -70,6 +70,7 @@ function printQuote () {
   const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
   //Change to random background color
   document.querySelector("body").style.backgroundColor = randomColor;
+  document.querySelector("button").style.backgroundColor = randomColor;
   // Make the timer reset every time the function is called (so it also takes 20 seconds after the click Event is fired)
   clearInterval(timer);
   timer = setInterval(printQuote, 20000);
